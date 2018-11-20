@@ -3,22 +3,7 @@
 ## 命令行启动
 ```
 chainstack命令行工具位于$GOBIN目录下,即:"~/go/bin/chainstackcli".
-测试环境的监控器：http://10.200.0.139:8887.
-PBFT全流程演示：http://10.200.0.139:8888.
-
-若启动命令行需要操控其它已启动节点,可以在启动命令中通过指定参数的形式进行.
-如:
-假设目前本地集群已启动,命令行工具需要操控v0节点,已知v0节点的ip:127.0.0.1
-httpPort:50007 那么控制台的启动命令如下:
-chainstackcli --http_host 127.0.0.1 --http_port 50007
-
-连接测试环境的启动命令是:"boots_env=test ~/go/bin/chainstackcli"
-
-或者：先设置临时环境变量
-
-"export boots_env=test"
-
-然后执行以下命令启动节点，启动节点时需要制定要创建或打开的钱包密码。若不指定钱包路径，则使用系统默认路径：~/.chainstack/
+启动节点时需要指定创建或打开的钱包密码。若不指定钱包路径，则使用系统默认路径：~/.chainstack/
 chainstackcli --node_type [type] --soft_wallet_pwd [password]
 chainstackcli -h 可查看启动的具体用法
 对于矿工节点启动时，可通过 --is_start_mine [value]决定是否需要自动启动挖矿。默认参数为0，不启动挖矿
@@ -28,35 +13,11 @@ chainstackcli -h 可查看启动的具体用法
 本地启动矿工(启动挖矿)　chainstackcli --node_type 1 --soft_wallet_pwd 123 --is_start_mine 1 
 本地启动验证者 chainstackcli --node_type 2 --soft_wallet_pwd 123
 
-连接测试环境的启动命令是:"boots_env=test ~/go/bin/chainstackcli --soft_wallet_pwd 123"
-
-
-
 若启动chainstackcli报错，则可能是本地链数据与链状态不同步，需要删除本地链数据：
-
 cd ~
 rm .chainstack -fr
 再次启动命令行
 ```
-## cs_ci_ex工具操作测试节点
-```
-启动
-cs_ci_ex
-连接到控制节点
-rpc default -c 10.200.0.139:10004
-执行相关操作
-转账：
-rpc -n m0 -m ListWallet
-rpc -n m0 -m ListWalletAccount -p SoftWallet,/home/qydev/tmp/chainstack_apps/default_m0/CSWallet,CSWallet
-rpc -n m0 -m SendTransaction -p [from],[to],20000,10
-
-执行上述命令时提示　connect refused　是由于未连接到节点导致的．一般是ip 或端口变化导致．若测试服务器ip未变化，可
-登录测试部署界面，可查看节点实际端口号.再进行连接：
-测试部署界面链接：http://10.200.0.139:8889/nodes
-rpc default -c 10.200.0.139:实际端口号
-
-```
-
 ## 命令行相关功能操作
 命令行相关功能操作如下:
 rpc -m [MethodName] -p [parameters]
