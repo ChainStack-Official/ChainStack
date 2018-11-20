@@ -64,7 +64,7 @@ rpc -m StartMine
 ### StopMine
 ```
 此功能minmaster使用
-启动挖矿:
+停止挖矿:
 rpc -m StopMine
 ```
 
