@@ -18,25 +18,23 @@ If it shows the following result on the screen, then the installation of MySQL i
   
 ## ToolBox Installing   
 ### 1.Download the ChainStack toolbox    
-1) download chainstack_tool.tgz   
-2) execute the command:   
+01.download chainstack_tool.tgz   
+02.execute the command:   
 ```
 mkdir ~/softwares     
 ``` 
 to create a directory   
 
-3) execute the command:    
+03.execute the command:    
 ```
 cp chainstack_tool.tgz ~/sofewares     
 ``` 
 to put the toolbox under this directory   
 
-
-4) enter this directory and execute the command:   
+04.enter this directory and execute the command:   
 ```
 tar xzvf chainstack_tool.tgz   
 ``` 
-
 to uncompress this file.       
 
 After that, we see the content by the command “ls”:    
