@@ -18,18 +18,19 @@ If it shows the following result on the screen, then the installation of MySQL i
   
 ## ToolBox Installing   
 ### 1.Download the ChainStack toolbox    
-01.download chainstack_tool.tgz   
+01.download chainstack_tool.tgz     
+
 02.execute the command:   
 ```
 mkdir ~/softwares     
 ``` 
-to create a directory   
+to create a directory       
 
 03.execute the command:    
 ```
 cp chainstack_tool.tgz ~/sofewares     
 ``` 
-to put the toolbox under this directory   
+to put the toolbox under this directory       
 
 04.enter this directory and execute the command:   
 ```
@@ -37,8 +38,10 @@ tar xzvf chainstack_tool.tgz
 ``` 
 to uncompress this file.       
 
-After that, we see the content by the command “ls”:    
-<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide2.png">
+After that, we see the content by the command “ls”:     
+
+<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide2.png">    
+  
 ### 2. install the ChainStack toolbox    
 Under the same directory, execute   
 ```
@@ -80,14 +83,22 @@ cd ~/softwares/chainstack_deploy
 ```
 cd ~/softwares/chainstack_deploy     
 ```
-3. surf 127.0.0.1:8889 on internet explorer     
-<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide3.png">
--  choose “node management”   
-<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide4.png">
--  click on “Launch” button and start chainstack   
-<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide5.png">
--  and click on “stop” button to stop chainstack    
-<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide6.png">
+3. surf 127.0.0.1:8889 on internet explorer    
+
+<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide3.png">   
+  
+choose “node management”    
+
+<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide4.png">   
+  
+click on “Launch” button and start chainstack    
+
+<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide5.png">   
+  
+and click on “stop” button to stop chainstack    
+
+<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide6.png">   
+ 
 4. run private node in the command line    
   
 ```
