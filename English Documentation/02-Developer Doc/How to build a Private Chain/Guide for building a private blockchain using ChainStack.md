@@ -14,7 +14,8 @@ netstat -tap | grep mysql
 
 If it shows the following result on the screen, then the installation of MySQL is successful.     
 
-<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide1.png">
+<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide1.png">    
+  
 ## ToolBox Installing   
 ### 1.Download the ChainStack toolbox    
 1) download chainstack_tool.tgz   
