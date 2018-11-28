@@ -3,7 +3,7 @@
 ## 命令行启动
 ```
 chainstack命令行工具位于$GOBIN目录下,即:"~/go/bin/chainstackcli".
-启动节点时需要指定创建或打开的钱包密码。若不指定钱包路径，则使用系统默认路径：~/.chainstack/
+启动节点时若需要使用已创建的钱包，则需指定钱包路径和相应的钱包密码。若不指定钱包路径，则使用系统默认路径：~/.chainstack/
 chainstackcli --node_type [type] --soft_wallet_pwd [password]
 chainstackcli -h 可查看启动的具体用法
 对于矿工节点启动时，可通过 --is_start_mine [value]决定是否需要自动启动挖矿。默认参数为0，不启动挖矿
