@@ -24,9 +24,7 @@ and restart the commandline
 ```
 
 ## Command Line Tool Operation
-The model for command line operation is like this:  
-rpc -m [MethodName] -p [parameters]  
-use ',' to seperate multiple parameters  
+The model for command line operation is like this: rpc -m [MethodName] -p [parameters]. Use ',' to seperate multiple parameters  
 
 ### CurrentBalance
 ```
