@@ -4,13 +4,10 @@
 
 ### 0.1.14
   - linux
-      - [下载主链](http://114.119.116.157:9000/chainstack/linux/0.1.14/chainstack)
       - [下载cli](http://114.119.116.157:9000/chainstack/linux/0.1.14/chainstackcli)
   - darwin
-      - [下载主链](http://114.119.116.157:9000/chainstack/darwin/0.1.14/chainstack)
       - [下载cli](http://114.119.116.157:9000/chainstack/darwin/0.1.14/chainstackcli)
   - windows
-      - [下载主链](http://114.119.116.157:9000/chainstack/windows/0.1.14/chainstack.exe)
       - [下载cli](http://114.119.116.157:9000/chainstack/windows/0.1.14/chainstackcli.exe)
 
 ## 命令行启动
