@@ -85,19 +85,19 @@ cd ~/softwares/chainstack_deploy
 ```
 3. surf 127.0.0.1:8889 on internet explorer    
 
-<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide3.png">   
+<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide3.png"  height="135" />   
   
 choose “node management”    
 
-<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide4.png">   
+<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide4.png" height="220" />   
   
 click on “Launch” button and start chainstack    
 
-<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide5.png">   
+<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide5.png" height="220" />   
   
 and click on “stop” button to stop chainstack    
 
-<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide6.png">   
+<image src="https://github.com/ChainStack-Official/ChainStack/blob/master/English%20Documentation/07-Others/pic/private%20blockchain/test_guide6.png" height="220" />   
  
 4. run private node in the command line    
   
