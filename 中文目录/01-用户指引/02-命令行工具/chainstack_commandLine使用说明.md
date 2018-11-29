@@ -2,32 +2,28 @@
 
 ## 下载地址
 
-### 0.1.14
-  - linux
-      - [下载cli](http://114.119.116.157:9000/chainstack/linux/0.1.14/chainstackcli)
-  - darwin
-      - [下载cli](http://114.119.116.157:9000/chainstack/darwin/0.1.14/chainstackcli)
-  - windows
-      - [下载cli](http://114.119.116.157:9000/chainstack/windows/0.1.14/chainstackcli.exe)
+linux
+    - [下载cli](http://114.119.116.157:9000/chainstack/linux/0.1.15/chainstackcli)
+darwin
+    - [下载cli](http://114.119.116.157:9000/chainstack/darwin/0.1.15/chainstackcli)
+windows
+    - [下载cli](http://114.119.116.157:9000/chainstack/windows/0.1.15/chainstackcli.exe)
 
 ## 命令行启动
-```
-chainstack命令行工具位于$GOBIN目录下,即:"~/go/bin/chainstackcli".
-启动节点时若需要使用已创建的钱包，则需指定钱包路径和相应的钱包密码。若不指定钱包路径，则使用系统默认路径：~/.chainstack/
-chainstackcli --node_type [type] --soft_wallet_pwd [password]
-chainstackcli -h 可查看启动的具体用法
-对于矿工节点启动时，可通过 --is_start_mine [value]决定是否需要自动启动挖矿。默认参数为0，不启动挖矿
 
-例：
-本地启动矿工(不启动挖矿)　chainstackcli --node_type 1 --soft_wallet_pwd 123
-本地启动矿工(启动挖矿)　chainstackcli --node_type 1 --soft_wallet_pwd 123 --is_start_mine 1 
-本地启动验证者 chainstackcli --node_type 2 --soft_wallet_pwd 123
+chainstackcli -h 可查看启动的具体用法
+
+首次启动会提示用户输入节点名称、选择节点类型、设置端口等操作。设置后它们将会被写入你的$HOME/.chainstack/start_conf.json中，可以手动打开该文件修改配置，再重新启动cli即可生效。
+
+直接执行`chainstackcli`无法直接连到chainstack测试网，它默认是连接本地有chainstack deploy搭建的私链环境。
+
+要连接到chainstack测试网，需要执行`boots_env=mercury　chainstackcli`，需要注意的是，如果之前连接过自己的私链，再启动时，需要修改$HOME/.chainstack/start_conf.json配置中的datadir字段，避免与自己的私链数据冲突。
 
 若启动chainstackcli报错，则可能是本地链数据与链状态不同步，需要删除本地链数据：
 cd ~
-rm .chainstack -fr
+rm .chainstack -fr # 如果datadir是自己定义的，则需要删除对应的datadir
 再次启动命令行
-```
+
 ## 命令行相关功能操作
 命令行相关功能操作如下:
 rpc -m [MethodName] -p [parameters]
