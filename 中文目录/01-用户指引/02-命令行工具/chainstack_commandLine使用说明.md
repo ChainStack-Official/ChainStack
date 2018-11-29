@@ -8,7 +8,7 @@
 
 ## 命令行启动
 
-chainstackcli -h 可查看启动的具体用法
+chainstackcli -h 可查看启动的具体用法，如果没有执行权限则需要给它加执行权限`chmod +x chainstackcli`
 
 首次启动会提示用户输入节点名称、选择节点类型、设置端口等操作。设置后它们将会被写入你的$HOME/.chainstack/start_conf.json中，可以手动打开该文件修改配置，再重新启动cli即可生效。
 
