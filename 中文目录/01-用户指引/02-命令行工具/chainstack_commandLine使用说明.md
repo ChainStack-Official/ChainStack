@@ -2,12 +2,9 @@
 
 ## 下载地址
 
-linux
-    - [下载cli](http://114.119.116.157:9000/chainstack/linux/0.1.15/chainstackcli)
-darwin
-    - [下载cli](http://114.119.116.157:9000/chainstack/darwin/0.1.15/chainstackcli)
-windows
-    - [下载cli](http://114.119.116.157:9000/chainstack/windows/0.1.15/chainstackcli.exe)
+[linux](http://114.119.116.157:9000/chainstack/linux/0.1.15/chainstackcli)
+[darwin](http://114.119.116.157:9000/chainstack/darwin/0.1.15/chainstackcli)
+[windows](http://114.119.116.157:9000/chainstack/windows/0.1.15/chainstackcli.exe)
 
 ## 命令行启动
 
@@ -20,8 +17,11 @@ chainstackcli -h 可查看启动的具体用法
 要连接到chainstack测试网，需要执行`boots_env=mercury　chainstackcli`，需要注意的是，如果之前连接过自己的私链，再启动时，需要修改$HOME/.chainstack/start_conf.json配置中的datadir字段，避免与自己的私链数据冲突。
 
 若启动chainstackcli报错，则可能是本地链数据与链状态不同步，需要删除本地链数据：
-cd ~
-rm .chainstack -fr # 如果datadir是自己定义的，则需要删除对应的datadir
+
+```shell
+rm -rf ~/.chainstack # 如果datadir是自己定义的，则需要删除对应的datadir
+```
+
 再次启动命令行
 
 ## 命令行相关功能操作
