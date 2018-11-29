@@ -2,14 +2,17 @@
 
 ## 下载地址
 
-### 0.2.9-beta
+### 0.2.10-beta
 
 - windows
-    - [Wallet.exe](http://114.119.116.157:9000/wallet/win/alpha/chainstack-wallet%20Setup%200.2.9-beta.exe)
-    - [Wallet.zip](http://114.119.116.157:9000/wallet/win/alpha/chainstack-wallet-0.2.9-beta-win.zip)
+    - [Wallet.exe](http://114.119.116.157:9000/wallet/win/beta/chainstack-wallet%20Setup%200.2.10-beta.exe)
+    - [Wallet.zip](http://114.119.116.157:9000/wallet/win/beta/chainstack-wallet-0.2.10-beta-win.zip)
 - linux
-    - [Wallet.AppImage](http://114.119.116.157:9000/wallet/linux/alpha/chainstack-wallet-0.2.9-beta-x86_64.AppImage)
-    - [Wallet.tar](http://114.119.116.157:9000/wallet/win/alpha/chainstack-wallet-0.2.9-beta.tar.gz)
+    - [Wallet.AppImage](http://114.119.116.157:9000/wallet/linux/beta/chainstack-wallet-0.2.10-beta-x86_64.AppImage)
+    - [Wallet.tar](http://114.119.116.157:9000/wallet/win/beta/chainstack-wallet-0.2.10-beta.tar.gz)
+- darwin
+    - [Wallet.tar](http://114.119.116.157:9000/wallet/mac/beta/chainstack-wallet-0.2.10-beta-mac.tar.gz)
+    - [Wallet.zip](http://114.119.116.157:9000/wallet/mac/beta/chainstack-wallet-0.2.10-beta-mac.zip)
 
 ## 使用说明
 
