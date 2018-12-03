@@ -2,9 +2,9 @@
 
 ## 下载地址
 
-[linux](http://114.119.116.157:9000/chainstack/linux/0.1.15/chainstackcli)
-[darwin](http://114.119.116.157:9000/chainstack/darwin/0.1.15/chainstackcli)
-[windows](http://114.119.116.157:9000/chainstack/windows/0.1.15/chainstackcli.exe)
+[linux](http://114.119.116.157:9000/chainstack/linux/0.1.21/chainstackcli)
+[darwin](http://114.119.116.157:9000/chainstack/darwin/0.1.21/chainstackcli)
+[windows](http://114.119.116.157:9000/chainstack/windows/0.1.21/chainstackcli.exe)
 
 ## 命令行启动
 
