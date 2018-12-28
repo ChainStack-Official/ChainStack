@@ -820,12 +820,13 @@ txHash:  0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
 
 
 
-## SendElectTransaction
+
+## SendUnStakeTransaction
 
 #### Request Method
 Post
 
-#### Request Field  
+#### Request Filed
 
 | Variable | Explanation | Type | Mandatory | Comment |
 |----------|------|----------|----------|------|
@@ -833,8 +834,8 @@ Post
 |fee|    | big.Int  |Yes||
 |nonce|  | uint64   |Yes||
 
-#### Request Example 
-URL/SendElectTransaction/  
+#### Request Example  
+URL/SendUnStakeTransaction/  
 
 
 #### Response Field  
@@ -844,7 +845,7 @@ URL/SendElectTransaction/
 |txHash|  Transaction Hash | common.Hash ||
 
 
-#### Response Example
+#### Response Example  
 
 {   
 txHash:  0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421   
@@ -859,7 +860,7 @@ txHash:  0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421
 #### Request Method
 Post
 
-#### Request   
+#### Request Field  
 
 | Variable | Explanation | Type | Mandatory | Comment |
 |----------|------|----------|----------|------|
@@ -1106,7 +1107,7 @@ URL/GetAddressNonceFromWallet/
 
 | Field | Explanation | Type | Comment |
 |----------|------|----------|----- |
-|nonce|  nonce value | uint64 ||
+|nonce|  Nonce Value | uint64 ||
 
 
 #### Response Example
@@ -1119,3 +1120,251 @@ nonce:25
 
 
 
+
+
+
+## AnnounceERC20
+
+#### Request Method
+Post
+
+#### Request Field  
+
+| Variable | Explanation | Type | Mandatory | Comment |
+|----------|------|----------|----------|------|
+|from      |   | common.Address |Yes||
+|tokenname |   | string         |Yes||
+|tokensymbol     |   | string  |Yes||
+|amount|    | big.Int  |Yes||
+|decimal|    | int  |Yes||
+|fee|    | big.Int  |Yes||
+
+
+
+#### Request Example  
+URL/AnnounceERC20/  
+
+
+#### Response Field  
+
+| Field | Explanation | Type | Comment |
+|----------|------|----------|-----  |
+|txHash |  Transaction Hash |common.Hash||
+
+
+#### Response Example
+
+{   
+txHash:  0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421   
+}
+
+
+
+
+
+## ERC20TotalSupply
+
+#### Request Method
+Post
+
+#### Request Field 
+
+| Variable | Explanation | Type | Mandatory | Comment |
+|----------|------|----------|----------|------|
+|contract address      |   | common.Address |Yes||
+
+
+#### Request Example  
+URL/ERC20TotalSupply/  
+
+
+#### Response Field  
+
+| Field | Explanation | Type | Comment |
+|----------|------|----------|-----  |
+|total supply |  Token Total Supply |big.Int||
+
+
+#### Response Example  
+
+{   
+total supply:  100  
+}
+
+
+
+
+
+
+## ERC20Transfer
+
+#### Request Method  
+Post
+
+#### Request Field  
+
+| Variable | Explanation | Type | Mandatory | Comment |
+|----------|------|----------|----------|------|
+|from      |   | common.Address |Yes||
+|to address |   | common.Address         |Yes||
+|contract address     |   | common.Address  |Yes||
+|amount|    | big.Int  |Yes||
+|fee|    | big.Int  |Yes||
+
+
+
+#### Request Example  
+URL/ERC20Transfer/  
+
+
+#### Response Field  
+
+| Field | Explanation | Type | Comment |
+|----------|------|----------|-----  |
+|txHash |  Transaction Hash |common.Hash||
+
+
+#### Response Example  
+
+{   
+txHash:  0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421   
+}
+
+
+
+
+
+## ERC20TransferFrom
+
+#### Request Method 
+Post
+
+#### Request Field 
+
+| Variable | Explanation | Type | Mandatory | Comment |
+|----------|------|----------|----------|------|
+|starter      |   | common.Address |Yes||
+|from      |   | common.Address |Yes||
+|to address |   | common.Address         |Yes||
+|contract address     |   | common.Address  |Yes||
+|amount|    | big.Int  |Yes||
+|fee|    | big.Int  |Yes||
+
+
+
+#### Request Example  
+URL/ERC20TransferFrom/  
+
+
+#### Response Field
+
+| Field | Explanation | Type | Comment |
+|----------|------|----------|-----  |
+|txHash |  Transaction Hash |common.Hash||
+
+
+#### Response Example 
+
+{   
+txHash:  0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421   
+}
+
+
+
+
+## ERC20Allowance
+
+#### Request Method
+Post
+
+#### Request Field 
+
+| Variable | Explanation | Type | Mandatory | Comment |
+|----------|------|----------|----------|------|
+|contract address      |   | common.Address |Yes||
+|owner address      |   | common.Address |Yes||
+|spender address      |   | common.Address |Yes||
+
+
+#### Request Example   
+URL/ERC20Allowance/  
+
+
+#### Response Field
+
+| Field | Explanation | Type | Comment |
+|----------|------|----------|-----  |
+|token allowance |  token max limit |big.Int||
+
+
+#### Response Example   
+
+{   
+token allowance:  9  
+}
+
+
+## ERC20Approve
+
+#### Request Method
+Post
+
+#### Request Field  
+
+| Variable | Explanation | Type | Mandatory | Comment |
+|----------|------|----------|----------|------|
+|from      |   | common.Address |Yes||
+|to address |   | common.Address         |Yes||
+|contract address     |   | common.Address  |Yes||
+|amount|    | big.Int  |Yes||
+|fee|    | big.Int  |Yes||
+
+
+
+#### Request Example 
+URL/ERC20Approve/  
+
+
+#### Response Field  
+
+| Field | Explanation | Type | Comment |
+|----------|------|----------|-----  |
+|txHash |  Transaction Hash |common.Hash||
+
+
+#### Response Example 
+
+{   
+txHash:  0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421   
+}
+
+
+## ERC20Balance
+
+#### Request Method
+Post
+
+#### Request Field  
+
+| Variable | Explanation | Type | Mandatory | Comment |
+|----------|------|----------|----------|------|
+|contract address      |   | common.Address |Yes||
+|owner address      |   | common.Address |Yes||
+
+
+#### Request Example  
+URL/ERC20Balance/  
+
+
+#### Response Field  
+
+| Field | Explanation | Type | Comment |
+|----------|------|----------|-----  |
+|token balance |  Token Balance |big.Int||
+
+
+#### Response Example   
+
+{   
+token balance:  9  
+}
